@@ -2,18 +2,18 @@
 
 **演示PPT**：
 
-[看这里]: http://pan.baidu.com/s/1i5A9mGt
-[或者这里]: http://pan.baidu.com/s/1mhCUIFm
+[看这里](http://pan.baidu.com/s/1i5A9mGt)
+[或者这里] (http://pan.baidu.com/s/1mhCUIFm)
 
 访问密码是：`1tmk`
 
 **演示视频：**
 
-[看这里]: http://pan.baidu.com/s/1mhMylMK
+[看这里](http://pan.baidu.com/s/1mhMylMK)
 
 **新闻介绍：**
 
-[看这里]: http://xk.qust.edu.cn/competition/content/?2063.html
+[看这里](http://xk.qust.edu.cn/competition/content/?2063.html)
 
 **整体结构：**
 
