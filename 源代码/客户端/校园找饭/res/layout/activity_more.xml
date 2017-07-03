@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/background_orange"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dip"
+                android:text="更多"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+		<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+        	<LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+            		
+      				<!--   ********************************************************************   -->
+      				 
+      				<RelativeLayout
+            			android:id="@+id/messagekaiguan"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="消息通知"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:id="@+id/xiaoxiguanbi"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="仅wifi下显示图片"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:id="@+id/soungkaiguan"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="声音与震动"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+      				<!--   ***********************************************************************   -->
+      				<RelativeLayout  
+      				    android:id="@+id/denglushezhi"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="登陆设置"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+      				<!--   ***********************************************************************   -->
+      				<RelativeLayout      				    
+            			android:id="@+id/shangjiarukou"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+        					
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="商家管理入口"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+      				<!--   ***********************************************************************   -->
+      				
+      				<RelativeLayout      				    
+            			android:id="@+id/guanyu"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="关于校园找饭"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+      				<RelativeLayout
+            			android:id="@+id/jianyi1"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="反馈建议"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 
+        				     					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:id="@+id/banbengenxin"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="检查更新"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 
+        				     					
+      				</RelativeLayout>
+      				<!--   ********************************************************************   -->
+      				
+      				   	
+        	
+        	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

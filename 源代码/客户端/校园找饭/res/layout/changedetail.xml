@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="详情修改"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/dishname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="菜品名"
+       
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/dishprice"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="价格"
+       
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:text="菜品名(请用尽量少的文字填写)"
+        android:textColor="#8F8F8F"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dishname"
+        android:text="价格（只支持整数）"
+        android:padding="10dp"
+        android:textColor="#8F8F8F"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/dishdec"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="描述"
+        
+        android:padding="10dp" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dishprice"
+        android:padding="10dp"
+        android:text="描述（请突出您的菜品特点）"
+        android:textColor="#8F8F8F"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/xiugaiqueren"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        android:background="@drawable/tijiao" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dishdec"
+        android:padding="10dp"
+        android:textColor="#8F8F8F"
+        android:text="Tip.请只修改您想要修改的内容，不修改的条目不动即可。"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

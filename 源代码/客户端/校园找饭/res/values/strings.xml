@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">校园找饭</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="qd">青岛</string>
+    <string name="bj">北京</string>
+    <string name="sh">上海</string>
+    <string name="wh">武汉</string>
+    <string name="jn">济南</string>
+    <string name="school">学校</string>
+    <string name="qdkd">青岛科技大学</string>
+    <string name="qddx">青岛大学</string>
+    <string name="sdkd">山东科技大学</string>
+    <string name="zgsy">中国石油大学</string>
+    <string name="zghy">中国海洋大学</string>
+    <string name="sy">首页</string>
+    <string name="my">我的饭桶</string>
+    <string name="fj">附近</string>
+    <string name="gd">更多</string>
+    <string name="back">返回</string>
+    <string name="search">搜索</string>
+    <string name="_">更多</string>
+    
+
+</resources>

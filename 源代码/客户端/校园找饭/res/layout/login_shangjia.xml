@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/shoujihao"
+            android:layout_weight="21.21"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="商户登陆"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <requestFocus android:layout_width="match_parent" />
+
+    <EditText
+        android:id="@+id/shanghuhao"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="商户号" />
+
+    <EditText
+        android:id="@+id/mima2"
+        android:layout_width="fill_parent"
+        android:padding="6dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shanghuhao"
+        android:layout_below="@+id/shanghuhao"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/zuce_shanghu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wangjimima"
+        android:layout_alignBottom="@+id/wangjimima"
+        android:layout_alignRight="@+id/denglu_shanghu"
+        android:text="免费注册"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:text="尊敬的商户，欢迎登陆"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:textColor="#666666"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/wangjimima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mima2"
+        android:layout_margin="10dp"
+        android:text="忘记密码？"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/denglu_shanghu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wangjimima"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/denglu" />
+
+    <CheckBox
+        android:id="@+id/sellerservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/denglu_shanghu"
+        android:layout_marginTop="11dp"
+        android:text="店铺新订单实时提醒" />
+
+</RelativeLayout>

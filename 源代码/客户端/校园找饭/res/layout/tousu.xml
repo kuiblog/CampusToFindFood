@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/home_LL"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/city_home"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/school" />
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="校园找饭"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/search_home"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tousuEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/home_LL"
+        android:ems="10"
+        android:hint="感谢您留下的宝贵意见，请在邮件中留下您的联系方式，我们将积极反馈，并给予您一定的饭点。"
+        android:padding="10dp" >
+
+        
+    </EditText>
+
+    <Button
+        android:id="@+id/fasongtousu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tousuEdit"
+        android:text="发送" />
+
+</RelativeLayout>

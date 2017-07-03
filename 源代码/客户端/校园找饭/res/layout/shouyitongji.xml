@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/titleshouyi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/shoujihao"
+            android:layout_weight="21.21"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="收益统计"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shangjiarukou"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleshouyi"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/shouyicount"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="234.60"
+            android:textColor="#000"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/renmingbi" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title12345"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleshouyi"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:text="校园找饭已经累计为您的店铺贡献了："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="17sp" />
+
+    </RelativeLayout>

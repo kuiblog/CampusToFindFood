@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/background_orange"
+            android:clickable="true"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dip"
+                android:text="校园找饭"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+     </LinearLayout>
+     <FrameLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+            <FrameLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="120.0dip">
+	         	<ImageView 
+	         	    android:id="@+id/userface" 
+	         	    android:layout_width="fill_parent" 
+	         	    android:layout_height="fill_parent" 
+	         	    android:src="@drawable/face" />
+	    	</FrameLayout>
+	    	
+        </LinearLayout>
+        <!-- 简介 -->
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:background="#22000000"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom">
+            <TextView 
+                android:id="@+id/intor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="#ffffff"
+                android:text="点击查看相册" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/userbackground"
+            android:clickable="true"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/itemdetailprice"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingTop="4dip"
+                android:paddingLeft="36dip"
+                android:text="9元"
+                android:textColor="#3399FF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/buy1" />
+            
+     </LinearLayout>
+     <!--  
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:paddingTop="4dip"
+                android:paddingLeft="18dip"
+                android:text="宫保鸡丁"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="4dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="选用净仔公鸡肉为主料，糍粑、辣椒等辅料烹制而成。此菜红而不辣、辣而不猛、香辣味浓、肉质滑脆。"
+                android:textSize="12sp"/>        
+     </LinearLayout>-->
+            <ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+            
+        	<LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+            		
+      				<!--   ********************************************************************   -->
+      				<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/itemdetailtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:paddingTop="4dip"
+                android:paddingLeft="18dip"
+                android:text="宫保鸡丁"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/itemdetailinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="4dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="选用净仔公鸡肉为主料，糍粑、辣椒等辅料烹制而成。此菜红而不辣、辣而不猛、香辣味浓、肉质滑脆。"
+                android:textSize="12sp"/>        
+     </LinearLayout> 
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="商家信息"
+        					android:textSize="16sp"		
+							android:textColor="#3399FF" />     					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="青岛市崂山区松岭路99号青岛科技大学"
+        					android:textSize="13sp"		
+							android:textColor="#000" />      
+						
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="0532-83848281"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 						   					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="购买须知"
+        					android:textSize="16sp"		
+							android:textColor="#3399FF" />     					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="亲爱的同学，为满足您的消费要求，本单无需预约，但是购买前请咨询商家。本单支持货到付款，希望您用心品尝，您的满意就是我们最大的鼓励。"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 						   					
+      				</RelativeLayout>  
+      				    				
+        	</LinearLayout>
+    </ScrollView>    
+     
+</LinearLayout>

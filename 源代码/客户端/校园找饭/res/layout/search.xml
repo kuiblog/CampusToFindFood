@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_search"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/back1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:paddingLeft="8dip"
+            android:text="校园找饭"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_weight="0.38"
+        android:ems="10"
+        android:hint="找饭去喽" 
+        android:drawableLeft="@drawable/ic_btn_search"/>
+
+    <Button
+        android:id="@+id/search1"
+        style="?android:attr/buttonStyleSmall"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="找饭"
+        
+        android:textColor="#f47920"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:text="推荐:"
+        android:textColor="#ffc20e"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textView1" >
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="排骨米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="黄焖鸡米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="排骨米饭"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="排骨米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="黄焖鸡米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="排骨米饭"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="黄焖鸡米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="排骨米饭"/>
+
+        <Button
+            android:id="@+id/buttontj2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:text="黄焖鸡米饭"/>
+    </LinearLayout>
+
+</RelativeLayout>

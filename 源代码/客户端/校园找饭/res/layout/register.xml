@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="30dip"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fanhuizhuye"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qq"
+        
+        
+        android:layout_toRightOf="@id/qq"
+        
+        
+        android:background="@drawable/weibo" />
+
+    <EditText
+        android:id="@+id/entry1"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:layout_alignLeft="@+id/ok"
+        android:layout_alignRight="@+id/ok"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请输入手机号，完全免费。" />
+
+    <EditText
+        android:id="@+id/mima"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/entry1"
+        android:layout_alignRight="@+id/entry1"
+        android:layout_below="@+id/entry1"
+        android:layout_toLeftOf="@+id/yonghumingyoukongge"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置密码"
+        android:inputType="textPassword" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ok"
+        android:layout_centerHorizontal="true"
+        android:text="还可以使用以下账号登陆" />
+
+    <Button
+        android:id="@+id/weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qq"
+        android:layout_alignBottom="@+id/qq"
+        android:layout_toLeftOf="@+id/qq"
+        android:background="@drawable/weixin" />
+
+    <EditText
+        android:id="@+id/addressyonghu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/mima"
+        android:layout_alignRight="@+id/mima"
+        android:layout_below="@+id/mima"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="设置送餐地址，精确到宿舍号。" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/addressyonghu"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/zhuce" />
+
+    <Button
+        android:id="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView111"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/qq" />
+
+"
+
+</RelativeLayout>

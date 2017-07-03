@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="30dip"
+            android:text="商户注册"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/yonghuming_shanghu_zuce"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:layout_alignLeft="@+id/shanghuok"
+        android:layout_alignRight="@+id/shanghuok"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="70sp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置登陆用户名" />
+
+    <EditText
+        android:id="@+id/mima3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/yonghuming_shanghu_zuce"
+        android:layout_alignRight="@+id/shanghuok"
+        android:layout_below="@+id/yonghuming_shanghu_zuce"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置密码"
+        android:inputType="textPassword" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/shanghushouji"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/mima3"
+        android:layout_alignRight="@+id/mima3"
+        android:layout_below="@+id/mima3"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置手机号"
+         />
+
+    <EditText
+        android:id="@+id/dianpuming"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shanghushouji"
+        android:layout_alignRight="@+id/shanghushouji"
+        android:layout_below="@+id/shanghushouji"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置您的店铺名" />
+
+    <EditText
+        android:id="@+id/nearschool"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/dianpuming"
+        android:layout_alignRight="@+id/dianpuming"
+        android:layout_below="@+id/dianpuming"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置您的店铺靠近哪所学校" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/dizhishanghu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/nearschool"
+        android:layout_alignRight="@+id/nearschool"
+        android:layout_below="@+id/nearschool"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="请设置您的店铺地址" />
+
+    <Button
+        android:id="@+id/shanghuok"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/dizhishanghu"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/zhuce" />
+
+"
+
+</RelativeLayout>

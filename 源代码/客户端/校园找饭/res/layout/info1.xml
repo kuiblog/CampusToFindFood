@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/userface"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userface"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="校园找饭 未发布测试版 ver0.24"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Bug及使用帮助:tel:13241821402"
+        android:autoLink="email|phone|web"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

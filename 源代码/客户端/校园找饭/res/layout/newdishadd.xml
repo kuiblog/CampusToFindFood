@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_orange"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="商户菜品添加"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/dishNameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="59dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="菜品名称"
+        android:padding="10dp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="18dp"
+        android:text="商户号:"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/shanghuhaoadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="15063932202"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/priceEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dishNameEdit"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="菜品价格"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/infoEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/priceEdit"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="菜品描述，请突出您的菜品特色。 "
+        android:padding="10dp" />
+
+	<ImageView
+	    android:id="@+id/imageadd"
+	    android:layout_width="240dp"
+	    android:layout_height="160dp"
+	    android:layout_below="@+id/infoEdit"
+	    android:layout_centerHorizontal="true"
+	    android:layout_margin="5dp"
+	    android:padding="5dp"
+	    android:src="@drawable/tianjiatupian" />
+
+	<Button
+	    android:id="@+id/submit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/imageadd"
+	    android:layout_alignRight="@+id/imageadd"
+	    android:layout_below="@+id/imageadd"
+	    android:background="@drawable/tijiao" />
+
+</RelativeLayout>
